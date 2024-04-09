@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jculcayT1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Grid>
+                <Image
+                Source="persona.png"
+                SemanticProperties.Description="Persona!"
+                
+                HeightRequest="50"
+                HorizontalOptions="Start" />
+
+                <Label
+                Text="Datos de la Persona"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            </Grid>
+       
+
+            <Border Stroke="Black">
+                <Entry x:Name="txtNombre" Placeholder="Ingrese sus Nombres" PlaceholderColor="Blue"/>
+            </Border>
+
+            <Border Stroke="Black">
+                <Entry x:Name="txtApellido" Placeholder="Ingrese sus Apellidos" PlaceholderColor="Blue"/>
+            </Border>
+            
+            
+            <Border Stroke="Black">
+                <Entry x:Name="txtEdad" Placeholder="Ingrese su Edad" PlaceholderColor="Blue"/>
+            </Border>
+            
+            <Border Stroke="Black">
+                <Entry x:Name="txtSalario" Placeholder="Ingrese su Salario" PlaceholderColor="Blue"/>
+            </Border>
+
+            <Button x:Name="btnCalcula"
+                    Text="Calcula aporte IESS"
+                    Clicked="btnCalcula_Clicked"/>
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
